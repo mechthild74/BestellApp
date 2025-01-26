@@ -1,0 +1,164 @@
+header {
+    background-color: #FF8360;
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 96px;
+}
+
+.main-frame {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.menu-frame {
+    width: calc(100% - 300px);
+}
+
+.content {
+    width: 100%;
+    box-shadow: inset -4px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.main-image{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url("./assets/img/main-imgage.jpg");
+    background-position: center; 
+    background-size: cover;
+}
+
+.logo-img {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant {
+    margin: 32px 0px;
+}
+
+h1 {
+    margin-left: 16px;
+    font-size: 32px;
+}
+
+h2 {
+    margin-left: 16px;
+    font-size: 28px; 
+}
+
+h3 {
+    font-size: 24px; 
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-top: 24px;
+    gap: 4px;
+    margin-left: 16px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quickbar {
+    background-color: rgba(255,131,96, 0.1);
+    margin-top: 48px;
+    padding: 8px 16px; 
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.quickbarlist {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #FF8360;
+}
+
+.menu-item {
+    width: calc(100% - 32px);
+    margin: 24px 16px;
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(36, 36, 36, 0.2);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item.menu-item:hover{
+    cursor: pointer;
+    background-color: rgba(255,131,96, 0.1);
+}
+
+.menu-item-line p, h3{
+    margin: 8px 0;
+}
+
+.price {
+    color: #FF8360;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.footer {
+    background-color: #FF8360;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer a {
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
+
+.footer a:hover {
+    font-weight: bold;
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schmeckt gut!</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <link rel="stylesheet" href="./styles/media.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="37f5bf2d-dfea-4d06-86fa-ab8fe12a66ac"  type="text/javascript"></script>
+
+</head>
+
+ <body onload="init()">
+       
+    <header>
+        <img id="top" class="logo" src="./assets/img/Logo.png" alt="Logo">
+    </header>
+
+    <main class="main-frame">
+
+        <section class="menu-frame">
+            <div id="menu" class="content">
+                <div class="main-image">
+                    <div class="logo-img">
+                        <img src="./assets/img/schmeckt_gut.png" alt="Schmeckt gut Logo">  
+                    </div> 
+                </div>
+                <div class="restaurant">
+                <h1>Schmeckt gut!</h1>
+                <div class="info">
+                    <div class="rating">
+                        <img class="icon" src="./assets/icons/noun-star-1088688-FF8360.svg" alt="Sternbild">
+                        <span>4.6(200+)</span>
+                    </div>
+                    <span class="dot"></span>
+                    <div class="rating">
+                        <img class="icon" src="./assets/icons/noun-basket-2444247-FF8360.svg" alt="Bild Tasche">
+                        <span>Min. 10,00 €</span>
+                    </div>
+                    <span class="dot"></span>
+                    <div class="rating">
+                        <img class="icon" src="./assets/icons/noun-food-delivery-7117008-FF8360.svg" alt="Bild Lieferung">
+                        <span>5,90 €</span>
+                    </div> 
+                </div>
+                <nav class="quickbar">
+                    <img class="icon" src="./assets/icons/noun-arrow-1920921-FF8360.svg" alt="Navigation">
+                    <div class="quickbarlist">
+                        <a href="#pasta-img">Pasta</a>
+                        <a href="#pizza-img">Pizza</a>
+                        <a href="#dish-img">Beilagen</a>
+                        <a href="#drink-img">Getränke</a>
+                    </div>
+                </nav>
+                <a href="#top"><img id="pasta-img" class="img-menu" src="./assets/img/pasta.jpg" alt="Pastabild"></a>
+                <h2>Pasta</h2>
+                <div id="pasta"></div>
+                <a href="#top"><img id="pizza-img" class="img-menu" src="./assets/img/pizza.jpg" alt="Pizzabild"></a>
+                <h2>Pizza</h2>
+                <div id="pizza"></div>
+                <a href="#top"><img id="dish-img" class="img-menu" src="./assets/img/salad-plate-1095648_1280.jpg" alt="Beilagen Bild"></a>
+                <h2>Beilagen</h2>
+                <div id="dish"></div>
+                <a href="#top"><img id="drink-img" class="img-menu" src="./assets/img/beverages.jpg" alt="Getränkebild"></a>
+                <h2>Getränke</h2>
+                <div id="drink"></div>
+            </div>
+        </section>
+
+        <div class="to-basket-btn" id="to-basket" onclick="clickRespBasket()">Zum Warenkorb</div>
+
+        <section id="basket-frame" class="basket-frame">
+            <div class="basket-header">
+                <h2>Warenkorb</h2>
+                <div class="toggle-switch">
+                    <input type="radio" id="select-delivery" name="toggle" checked>
+                    <label for="select-delivery" class="toggle-option">
+                        <img class="toggle-icon" src="./assets/icons/noun-food-delivery-7117008-FF8360.svg" alt=""> Lieferung<br>
+                        <small>25-50 min</small>
+                    </label>
+
+                    <input type="radio" id="select-pick" name="toggle">
+                    <label for="select-pick" class="toggle-option">
+                        <img class="toggle-icon" src="./assets/icons/noun-shopping-bag-7442412-FF8360.svg" alt="Abholung"> Abholung<br>
+                        <small>15 min</small></label>
+                    <div class="slider"></div>
+                </div>
+            </div>
+            <div id="basket-item" class="basket-item"></div>
+            <div class="basket-footer">
+                <div id="payment" class="payment"></div>
+                <p class="min-value" id="min-value"></p>
+            </div>      
+        </section>
+
+        <section id="overlay-ordered" class="overlay-ordered">           
+        </section>
+
+        <section id="overlay-basket" class="overlay-basket">           
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer" class="footer">
+           <div>
+            <a href="#top"><img class="footer-logo" src="./assets/icons/favicon-32x32.png" alt="logo"></a>
+           </div>
+           <div>
+                <a href="./html/gdpr.html" target="_blank">Datenschutz</a>
+                <a href="./html/impressum.html" target="_blank">Impressum</a>
+           </div>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/datasets.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
